@@ -1,0 +1,57 @@
+body {
+	font-family: 'Amatic SC', cursive;
+    background-color: #4abdac;
+}
+
+header{
+    background-image: url(/img/fundo\ header.jpg);
+}
+
+.flex {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    
+}
+.item {
+	margin: 20px;
+    background: #f7b733;
+    border-radius: 5px;
+    font-size: 3em;
+    text-align: center;
+    color: #dfdce3;
+
+}
+
+.container {
+	max-width: 2000px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #dfdce3;
+}
+
+h2{
+    background: #fc4a1a;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
+    color: #dfdce3;
+
+}
+div.box{
+    width: 150px;
+	display: inline-block;
+    
+}
+
+.img_sesc{
+    width: 300px;
+    border: thin solid #f7b733;
+    padding: 10px;
+    margin: 0px 10px 10px 0;
+    
+   }
