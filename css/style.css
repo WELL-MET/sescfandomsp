@@ -1,17 +1,23 @@
 body {
 	font-family: 'Amatic SC', cursive;
     background-color: #4abdac;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 header{
     background-image: url(/img/fundo\ header.jpg);
+    text-align: center;
 }
-
+.container {
+	max-width: 2000px;
+	margin: 0 auto;
+	align-items: center;
+}
 .flex {
     flex: 1;
     display: inline-flex;
-    align-items: center;
-    
 }
 .item {
 	margin: 20px;
@@ -21,12 +27,6 @@ header{
     text-align: center;
     color: #dfdce3;
 
-}
-
-.container {
-	max-width: 2000px;
-	margin: 0 auto;
-	align-items: center;
 }
 
 a{
@@ -43,15 +43,96 @@ h2{
 
 }
 div.box{
-    width: 150px;
-	display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: solid: 10px #2c2c2c; 
     
 }
 
-.img_sesc{
-    width: 300px;
-    border: thin solid #f7b733;
-    padding: 10px;
-    margin: 0px 10px 10px 0;
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     
    }
+
+   .slide_img img{
+       width: 100%;
+       height: 100%;
+   }
+   #i1, #i2, #i3, #i4, #i5, #i6, #i7{
+       display: none;
+   }
+   .pre, .nxt{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(247, 183, 51, .4);
+    z-index: 99;
+    cursor: pointer;
+}
+.pre{
+    left: 0;
+}
+.nxt{
+    right: 0;
+ }
+ .nav{
+     width: 100%;
+     height: 11px;
+     bottom: 12%;
+     position: absolute;
+     text-align: center;
+     z-index: 99;
+ }
+ .dots{
+     top: -5px;
+     width: 18px;
+     height: 18px;
+     margin: 0 4px;
+     position: relative;
+     border-radius: 50%;
+     display: inline-block;
+     background: rgb(0, 0, 0, .6);
+ }
+ .slide_img{
+     z-index: -1;
+ }
+
+ #i1:checked ~ #one,
+ #i2:checked ~ #two,
+ #i3:checked ~ #three,
+ #i4:checked ~ #four,
+ #i5:checked ~ #five,
+ #i6:checked ~ #six,
+ #i7:checked ~ #seven{
+     z-index: 9;
+ }
+
+ #i1:checked ~ .nav #dot1,
+ #i2:checked ~ .nav #dot2,
+ #i3:checked ~ .nav #dot3,
+ #i4:checked ~ .nav #dot4,
+ #i5:checked ~ .nav #dot5,
+ #i6:checked ~ .nav #dot6,
+ #i7:checked ~ .nav #dot7{
+     background: #f7b733;
+ }
+ 
+ p {
+    font-size: 2em;
+    color: #dfdce3;
+ }
+ 
+ .mural{
+     margin: 0px 200px 10px 200px;
+     text-align: center;
+
+ }
+ 
