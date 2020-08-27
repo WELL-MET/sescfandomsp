@@ -1,3 +1,2 @@
 # sescfandomsp
-Veja o repositório SESC_FANDOM_SP - Site refeito do zero.
-Projeto de web site para unidades do Sesc da cidade de São Paulo, tipo comunidade on-line, fandom. 
+Primeiros exercícios e exprimentações para criação do projeto, veja projeto finalizado com detalhes no repositório https://github.com/WELL-MET/SESC_FANDOM_SP
